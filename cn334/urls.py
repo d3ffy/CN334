@@ -17,6 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from ecommerce import views as ecom_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('ecommerce/', ecom_views.ecommerce_index_views),
+    path('ecommerce/homePage/', ecom_views.home_page),
+    path('ecommerce/categoryPage/', ecom_views.category_page),
+    path('ecommerce/checkoutPage/', ecom_views.checkout_page),
+    path('ecommerce/contactPage/', ecom_views.contact_page),
+    path('ecommerce/productPage/', ecom_views.product_page),
 ]
