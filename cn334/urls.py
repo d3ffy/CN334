@@ -27,4 +27,6 @@ urlpatterns = [
     path('ecommerce/checkoutPage/', ecom_views.checkout_page),
     path('ecommerce/contactPage/', ecom_views.contact_page),
     path('ecommerce/productPage/', ecom_views.product_page),
+    path("w09/request", ecom_views.basic_request),
+    path("w09/tokenize", ecom_views.tokenize)
 ]
